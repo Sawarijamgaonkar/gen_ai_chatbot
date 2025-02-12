@@ -11,7 +11,7 @@ nltk.download('omw-1.4')
 
 lemmatizer=WordNetLemmatizer()
 
-intents=json.loads(open(r'D:\college\internships\nullclass\chatbot\intents.json').read())
+intents=json.loads(open(r'D:\college\internships\nullclass\chatbot\NLP\intents.json').read())
 
 #creating empty list:
 words=[]

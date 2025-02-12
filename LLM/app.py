@@ -2,10 +2,16 @@ import streamlit as st
 # from langchain_community.llms import Ollama
 from langchain_ollama import OllamaLLM
 
+from langchain.document_loaders import PyPDFLoader
+from langchain.indexes import VectorstoreIndexCreator
+from langchain.chains import retrieval_qa
+from langchain.embeddings import HuggingFaceBgeEmbeddings
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+
 # Initialize Ollama
 ollama = OllamaLLM(model="llama3.2")
 
-st.title("💬 llama3 Chatbot")
+st.title("💬 My first llama3 Chatbot")
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = [

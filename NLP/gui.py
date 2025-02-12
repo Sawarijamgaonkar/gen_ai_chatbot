@@ -67,7 +67,7 @@ class ChatbotGUI:
         self.lemmatizer = WordNetLemmatizer()
         self.intents = json.loads(
             open(
-                r"D:\college\internships\nullclass\chatbot\intents.json"
+                r"D:\college\internships\nullclass\chatbot\NLP\intents.json"
             ).read()
         )
         self.words = pickle.load(open("words.pkl", "rb"))

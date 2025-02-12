@@ -6,13 +6,6 @@ from langchain_ollama import OllamaLLM
 import streamlit as st
 import os
 
-# from streamlit.runtime.scriptrunner import add_script_run_ctx,get_script_run_ctx
-# from subprocess import Popen
-
-# ctx = get_script_run_ctx()
-# ##Some code##
-# process = Popen(['python','new.py'])
-# add_script_run_ctx(process,ctx)
 
 ## Prompt Template
 
